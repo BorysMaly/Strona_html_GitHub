@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssstyles.css">
+    <title>Document</title>
+    <script>
+        function pokaz(){
+            if (document.getElementById("li1").checked){
+                location.assign("https://github.com")
+            }
+            if (document.getElementById("li2").checked){
+                location.assign("https://www.w3schools.com")
+            }
+            if (document.getElementById("li3").checked){
+                location.assign("https://www.w3schools.com/colors/colors_picker.asp")
+            }
+            if (document.getElementById("li4").checked){
+                location.assign("https://roadmap.sh")
+            }
+            if (document.getElementById("li5").checked){
+                location.assign("https://stackoverflow.com")
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">Github</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="links.html">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Przydatne stony do pracy z programowaniem</h1>
+        <p><label><input type="radio" id="li1" name="spo"/>Github</label></p>
+        <p><label><input type="radio" id="li2" name="spo"/>W3schools</label></p>
+        <p><label><input type="radio" id="li3" name="spo"/>HTML color picker</label></p>
+        <p><label><input type="radio" id="li4" name="spo"/>Roadmap</label></p>
+        <p><label><input type="radio" id="li5" name="spo"/>Stackoverflow</label></p>
+        <button class="przycisk"onclick="pokaz();">Choose</button></p>
+    </main>
+</body>
+</html>
